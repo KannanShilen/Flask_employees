@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Update</title>
+{% endblock %}
+{% block body %}
+<hr>
+    <form action = "/update" method = "POST">
+        Enter ID to be updated:<input type = "number" name = "eid" id = "eid">
+        <br><br>
+        Employee name:<input type = "text" name = "name" id = "name">
+        <br><br>
+        Employee Age:<input type = "number" name = "age" id = "age">
+        <br><br>
+        Employee position:<input type = "text" name = "position" id = "position">
+        <br><br>
+        <input type = "submit" value = "Submit">
+        <br>
+    </form>
+    <form action = "/"><input type= "Submit" value = "Back To Homepage"></form>
+<hr>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Error</title>
+{% endblock %}
+{% block body %}
+{% if val == 1 %}
+<p>Employee cannot be created as an employee with given ID already exists</p>
+<form action = "/update"><input type = "Submit" value = "Update Employee"></form>
+<br>
+{% elif val == 2 %}
+<p>Employee with given ID does not exist</p>
+<form action = "/create"><input type = "Submit" value = "Create New Employee"></form>
+<br>
+<form action = "/update"><input type = "Submit" value = "Update Different Employee"></form>
+<br>
+{% elif val == 3 %}
+<p>Employee with given ID does not exist</p>
+<form action = "/delete"><input type = "Submit" value = "Delete Different Employee"></form>
+<br>
+{% elif val == 4 %}
+<p>Employee with given ID does not exist</p>
+<form action = "/search"><input type = "Submit" value = "Search Different Employee"></form>
+{% endif %}
+<form action = "/"><input type= "Submit" value = "Back To Homepage"></form>
+
+{% endblock %}

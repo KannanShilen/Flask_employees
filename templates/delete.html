@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Delete</title>
+{% endblock %}
+{% block body %}
+<form action = "/delete" method = "POST">
+    Enter ID to be deleted:<input type = "number" name = "eid" value = "eid">
+    <br>
+    <input type = "Submit" value = "Submit">
+</form>
+<form action = "/"><input type= "Submit" value = "Back To Homepage"></form>
+{% endblock %}

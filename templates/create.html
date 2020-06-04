@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Create</title>
+{% endblock %}
+{% block body %}
+<hr>
+    <form action = "\create" method = "POST">
+        Employee Name:<input type = "text" name = "name" id = "name">
+        <br><br>
+        Employee Age:<input type = "number" name = "age" id = "age">
+        <br><br>
+        Employee ID:<input type = "number" name = "eid" id = "eid">
+        <br><br>
+        Position:<input type = "text" name = "position" id = "position"> 
+        <br><br>
+        <input type = "submit" value = "Submit">
+    </form>
+    <form action = "/"><input type= "Submit" value = "Back To Homepage"></form>
+<hr>
+
+{% endblock %}
