@@ -3,11 +3,11 @@
 <title>Print</title>
 {% endblock %}
 {% block body %}
-{% for emp in emp_lists %}
-<p>Employee Name: {{ emp_lists[emp].name }}</p>
-<p>Employee Age: {{ emp_lists[emp].age }}</p>
-<p>Employee ID: {{ emp_lists[emp].eid }}</p>
-<p>Employee Position: {{ emp_lists[emp].position }}</p>
+{% for x in emp %}
+<p>Employee Name: {{ x.name }}</p>
+<p>Employee Age: {{ x.age }}</p>
+<p>Employee ID: {{ x.eid }}</p>
+<p>Employee Position: {{ x.position }}</p>
 
 <br><br>
 {% endfor %}

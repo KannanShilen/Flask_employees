@@ -10,10 +10,10 @@
     <input type = "Submit" value = "Submit">
 </form>
 {% elif val == 1 %}
-<p>Employee Name: {{ emp_lists[emp].name }}</p>
-<p>Employee Age: {{ emp_lists[emp].age }}</p>
-<p>Employee ID: {{ emp_lists[emp].eid }}</p>
-<p>Employee Position: {{ emp_lists[emp].position }}</p>
+<p>Employee Name: {{ emp_lists.name }}</p>
+<p>Employee Age: {{ emp_lists.age }}</p>
+<p>Employee ID: {{ emp_lists.eid }}</p>
+<p>Employee Position: {{ emp_lists.position }}</p>
 {% endif %}
 <form action = "/"><input type= "Submit" value = "Back To Homepage"></form>
 {% endblock %}
