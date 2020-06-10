@@ -65,7 +65,7 @@ def update():
             return redirect("/update")
     else:
         return render_template("update.html")
-
+#comment
 @app.route("/search",methods = ["GET", "POST"])
 def search():
     if request.method == "POST":
